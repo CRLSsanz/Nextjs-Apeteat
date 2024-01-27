@@ -1,6 +1,4 @@
-import React from "react";
-
-export const Login = () => {
+export default function Login() {
   return (
     <div className="bg-white text-gray-800">
       <div className="text-center p-6 border-b text-sm">
@@ -31,4 +29,4 @@ export const Login = () => {
       </form>
     </div>
   );
-};
+}

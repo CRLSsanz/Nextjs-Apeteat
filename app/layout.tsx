@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Comfortaa, Roboto_Flex } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "./components/Navbar";
 
 const inter = Roboto_Flex({ subsets: ["latin"] });
 
@@ -17,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <h1 className="p-5">apeteat</h1>
+        <div>
+          <Navbar />
+        </div>
         {children}
         <h1>Footer</h1>
       </body>
