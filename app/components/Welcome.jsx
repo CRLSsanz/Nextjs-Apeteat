@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import ima1 from "@/app/image/home_desktop_01.png";
 
 const ima1m =
   "https://s3.eu-central-1.amazonaws.com/apeteat.media/web/images/home_mobile_01.png";
-const ima1 =
-  "https://s3.eu-central-1.amazonaws.com/apeteat.media/web/images/home_desktop_01(2).png";
+//const ima1 =
+//  "https://s3.eu-central-1.amazonaws.com/apeteat.media/web/images/home_desktop_01(2).png";
 const ima2 =
   "https://s3.eu-central-1.amazonaws.com/apeteat.media/web/images/home_02.png";
 const vineta =
@@ -100,7 +101,7 @@ export const Welcome = () => {
         <div className="basis-1/2 flex items-center mb-10 lg:mb-0">
           <img src={ima2} alt="" />
         </div>
-        <div className="basis-1/2 lg:px-8 xl:px-16">
+        <div className="basis-1/2 lg:px-8 xl:px-12">
           <h1 className="uppercase font-semibold text-gray-600 mb-2">
             Nuestra comida
           </h1>
@@ -368,7 +369,7 @@ export const Welcome = () => {
           </div>
         </div>
 
-        <div className="w-full flex items-center">
+        <div className="w-full flex justify-center">
           <button className="w-4/6 md:w-52 p-3 text-white bg-teal-400 font-semibold rounded-md mb-5">
             Hacer pedido
           </button>
