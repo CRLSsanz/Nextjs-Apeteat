@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const logo =
   "https://s3.eu-central-1.amazonaws.com/apeteat.media/web/images/svg/apeteat_logo.svg";
@@ -11,12 +12,12 @@ export const Navbar = () => {
   const [show2, setShow2] = useState(false);
 
   return (
-    <div className="w-full h-20 px-3 lg:px-20 xl:px-32 fixed flex justify-between items-center bg-white text-gray-600 z-50">
-      <div className="w-32 text-2xl">
+    <div className="w-full h-20 px-3 lg:px-20 xl:px-32 fixed flex justify-between items-center bg-white text-gray-600 z-10">
+      <div className="w-28 md:w-32">
         <img src={logo} alt="" />
       </div>
       {navbar ? (
-        <div className="w-72 h-full fixed flex flex-col justify-between top-20 right-0 bg-white px-14 pt-4 pb-24 shadow-xl shadow-gray-700 ">
+        <div className="w-80 h-full fixed flex flex-col justify-between top-20 right-0 bg-white px-14 pt-4 pb-24 shadow-xl shadow-gray-700 ">
           <div className="grid gap-6">
             <div className="flex items-center mb-4">
               <Link
@@ -24,7 +25,7 @@ export const Navbar = () => {
                 onClick={() => setNavbar(false)}
                 className="font-bold mr-4"
               >
-                Iniciar sesion
+                Iniciar Sesion
               </Link>
               <svg
                 width="30px"
@@ -34,28 +35,28 @@ export const Navbar = () => {
               >
                 <path
                   d="M12.1992 12C14.9606 12 17.1992 9.76142 17.1992 7C17.1992 4.23858 14.9606 2 12.1992 2C9.43779 2 7.19922 4.23858 7.19922 7C7.19922 9.76142 9.43779 12 12.1992 12Z"
-                  stroke="#000000"
+                  stroke="currentColor"
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
                 <path
                   d="M3 22C3.57038 20.0332 4.74795 18.2971 6.36438 17.0399C7.98081 15.7827 9.95335 15.0687 12 15"
-                  stroke="#000000"
+                  stroke="currentColor"
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
                 <path
                   d="M15 18H23"
-                  stroke="#000000"
+                  stroke="currentColor"
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
                 <path
                   d="M20 15L23 18L20 21"
-                  stroke="#000000"
+                  stroke="currentColor"
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -86,14 +87,15 @@ export const Navbar = () => {
             </Link>
           </div>
           <div>
-            <button className="p-2 bg-teal-400 text-white">Ver Carta</button>{" "}
+            <button className="p-2 px-6 rounded-md bg-teal-400 text-white">
+              Ver Carta
+            </button>{" "}
           </div>
           <div className="">idioma y redes sociales</div>
         </div>
       ) : (
         <div></div>
       )}
-
       <div className="lg:hidden flex justify-center">
         <button
           className="active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
@@ -211,7 +213,7 @@ export const Navbar = () => {
           <div className="mr-10">idioma</div>
           <div className="mr-10">Iniciar sesion</div>
           <div className="">
-            <button className="w-32 py-2 rounded-md bg-teal-400 text-white">
+            <button className="w-32 py-2 rounded-md bg-teal-400 text-white font-semibold">
               Ver Carta
             </button>
           </div>

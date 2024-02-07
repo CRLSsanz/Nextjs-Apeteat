@@ -1,13 +1,13 @@
 export default function Login() {
   return (
-    <div className="bg-white text-gray-800">
-      <div className="text-center p-6 border-b text-sm">
+    <div className="bg-white text-gray-800 z-20">
+      <div className="text-center p-5 border-b text-sm pt-24">
         <span className="mr-4">No tienes cuenta en ApetEat?</span>
         <span className="text-teal-400 font-semibold">Crear Cuenta</span>
       </div>
 
-      <form className="my-10 p-5" action="">
-        <h1 className="my-8 font-bold">Iniciar Sesion en ApetEat</h1>
+      <form className="my-10 p-8" action="">
+        <h1 className="my-8 font-bold text-lg">Iniciar Sesion en ApetEat</h1>
         <h2 className="text-xs">Email</h2>
         <input
           className="w-full py-2 border-b mb-6"

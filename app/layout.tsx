@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Comfortaa, Roboto_Flex } from "next/font/google";
+import {
+  Inter,
+  Comfortaa,
+  Roboto_Flex,
+  Roboto_Condensed,
+} from "next/font/google";
 import "./globals.css";
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "@/components/Navbar";
 
-const inter = Roboto_Flex({ subsets: ["latin"] });
+const inter = Comfortaa({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Apeteat",
@@ -17,12 +22,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      </head>
       <body className={inter.className}>
         <div>
           <Navbar />
         </div>
         {children}
-        <h1>Footer</h1>
+        <h1 className="hidden">Footer</h1>
       </body>
     </html>
   );
