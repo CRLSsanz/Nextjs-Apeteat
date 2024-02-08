@@ -3,7 +3,7 @@
 const ima1m =
   "https://s3.eu-central-1.amazonaws.com/apeteat.media/web/images/home_mobile_01.png";
 const ima1 =
-  "https://raw.githubusercontent.com/CRLSsanz/Nextjs-Apeteat/main/app/image/home_desktop_01.png";
+  "https://raw.githubusercontent.com/CRLSsanz/Nextjs-Apeteat/main/public/image/home_desktop_01.png";
 
 const ima2 =
   "https://s3.eu-central-1.amazonaws.com/apeteat.media/web/images/home_02.png";
@@ -38,7 +38,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col text-gray-600">
       <div className="px-6 md:px-12 mt-20">
         <section className="mb-20 md:w-[600px] md:mx-auto lg:hidden">
-          <h1 className="text-2xl sm:text-4xl font-semibold mb-5">
+          <h1 className="text-2xl sm:text-4xl font-semibold my-5">
             Servicio de alimentación y bienestar para empresas en Barcelona y
             Madrid
           </h1>

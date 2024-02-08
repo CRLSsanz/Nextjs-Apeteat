@@ -18,7 +18,7 @@ export const Navbar = () => {
       </div>
       {navbar ? (
         <div className="w-80 h-full fixed flex flex-col justify-between top-20 right-0 bg-white px-14 pt-4 pb-24 shadow-xl shadow-gray-700 ">
-          <div className="grid gap-6">
+          <div className="grid gap-5 text-sm">
             <div className="flex items-center mb-4">
               <Link
                 href="/login"
@@ -63,19 +63,19 @@ export const Navbar = () => {
                 />
               </svg>
             </div>
-            <Link href="/about" onClick={() => setNavbar(false)}>
+            <Link href="/como-funciona" onClick={() => setNavbar(false)}>
               Como funciona
             </Link>
-            <Link href="/" onClick={() => setNavbar(false)}>
+            <Link href="/nuestra-comida" onClick={() => setNavbar(false)}>
               Nuestra comida
             </Link>
-            <Link href="/" onClick={() => setNavbar(false)}>
+            <Link href="/empresas" onClick={() => setNavbar(false)}>
               Apeteat Empresas
             </Link>
-            <Link href="/" onClick={() => setNavbar(false)}>
+            <Link href="/solidaridad" onClick={() => setNavbar(false)}>
               Solidaridad
             </Link>
-            <Link href="/" onClick={() => setNavbar(false)}>
+            <Link href="/envases-ecologicos" onClick={() => setNavbar(false)}>
               ECO Pachaging
             </Link>
             <Link
