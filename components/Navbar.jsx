@@ -18,7 +18,7 @@ export const Navbar = () => {
       </div>
       {navbar ? (
         <div className="w-80 h-full fixed flex flex-col justify-between top-20 right-0 bg-white px-14 pt-4 pb-24 shadow-xl shadow-gray-700 ">
-          <div className="grid gap-5 text-sm">
+          <div className="grid gap-5 text-base">
             <div className="flex items-center mb-4">
               <Link
                 href="/login"
