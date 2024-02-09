@@ -13,9 +13,9 @@ export const Navbar = () => {
 
   return (
     <div className="w-full h-20 px-3 lg:px-20 xl:px-32 fixed flex justify-between items-center bg-white text-gray-600 z-10">
-      <div className="w-28 md:w-32">
+      <Link href="/" className="w-28 md:w-32">
         <img src={logo} alt="" />
-      </div>
+      </Link>
       {navbar ? (
         <div className="w-80 h-full fixed flex flex-col justify-between top-20 right-0 bg-white px-14 pt-4 pb-24 shadow-xl shadow-gray-700 ">
           <div className="grid gap-5 text-base">
