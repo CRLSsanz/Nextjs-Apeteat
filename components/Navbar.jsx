@@ -87,9 +87,12 @@ export const Navbar = () => {
             </Link>
           </div>
           <div>
-            <button className="p-2 px-6 rounded-md bg-teal-400 text-white">
+            <Link
+              href="/carta/menu-completo"
+              className="p-2 px-6 rounded-md bg-teal-400 text-white"
+            >
               Ver Carta
-            </button>{" "}
+            </Link>
           </div>
           <div className="">idioma y redes sociales</div>
         </div>

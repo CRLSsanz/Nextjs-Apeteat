@@ -1,4 +1,4 @@
-//import ima1 from "@/public/image/home_desktop_01.png";
+import Link from "next/link";
 
 const ima1m =
   "https://s3.eu-central-1.amazonaws.com/apeteat.media/web/images/home_mobile_01.png";
@@ -54,13 +54,19 @@ export default function Home() {
             <img src={ima1m} alt="" />
           </div>
 
-          <div className="flex flex-col items-center">
-            <button className="w-full p-3 text-teal-400 border-2 border-teal-400 font-semibold rounded-md mb-5">
+          <div className="flex flex-col items-center text-center">
+            <Link
+              href="/carta/menu-completo"
+              className="w-full p-3 text-teal-400 border-2 border-teal-400 font-semibold rounded-md mb-5"
+            >
               Hacer pedido
-            </button>
-            <button className="w-full p-3 text-white bg-teal-400 font-semibold rounded-md mb-5">
+            </Link>
+            <Link
+              href="/empresas"
+              className="w-full p-3 rounded-md bg-teal-400 text-white"
+            >
               ApetEat Empresas
-            </button>
+            </Link>
           </div>
         </section>
 
